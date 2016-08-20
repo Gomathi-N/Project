@@ -6,11 +6,16 @@ int main(){
 	checkLeapYear(year);
 }
 void checkLeapYear(int year){
-	if(year%400==0)
-		printf("Leap year");
-	else if((year%100!=0)&&(year%4==0))
-		printf("Leap year");
-	else
-		printf("Not a leap year");
+	if(year>0){
+		if(year%400==0)
+			printf("Leap year");
+		else if((year%100!=0)&&(year%4==0))
+			printf("Leap year");
+		else	
+			printf("Not a leap year");
+	}
+	else{
+		printf("Invalid");
+	}
 	
 }
