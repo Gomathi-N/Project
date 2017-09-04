@@ -5,8 +5,12 @@ int main()
 {
     int b, e;
     scanf("%d%d",&b,&e);
-    int result = power(b,e);
-    printf("%d", result);
+    if(e == 0)
+       printf("1");
+    else{
+       int result = power(b,e);
+       printf("%d", result);
+    }
     return 0;
 }
 int power(int base, int exponent){
